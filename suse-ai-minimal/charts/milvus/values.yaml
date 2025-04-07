@@ -6,7 +6,7 @@ cluster:
 standalone:
   persistence:
     persistentVolumeClaim:
-      storageClass: local-path
+      storageClass: harvester
 pulsar:
   enabled: false
 
@@ -16,7 +16,7 @@ pulsarv3:
 etcd:
   replicaCount: 1
   persistence:
-    storageClassName: local-path
+    storageClassName: harvester
 minio:
   enabled: true
   mode: standalone
@@ -43,4 +43,4 @@ kafka:
     resources:
       requests:
         storage: 8Gi
-    storageClassName: "local-path" 
+    storageClassName: "harvester" 
