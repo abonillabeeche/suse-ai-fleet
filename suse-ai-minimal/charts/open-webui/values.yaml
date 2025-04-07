@@ -10,13 +10,13 @@ ollamaUrls:
 - http://ollama.suse-ai.svc.cluster.local:11434
 persistence:
   enabled: true
-  storageClass: local-path
+  storageClass: harvester
 ollama:
   enabled: false
 pipelines:
   enabled: False
   persistence:
-    storageClass: local-path
+    storageClass: harvester
 ingress:
   enabled: true
   class: "nginx"
