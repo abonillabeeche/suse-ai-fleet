@@ -22,7 +22,7 @@ ingress:
   class: "nginx"
   annotations:
     nginx.ingress.kubernetes.io/ssl-redirect: "true"
-  host: "open-webui.kcdemos.com"
+  host: "chat.5glinux.com"
   tls: false
 extraEnvVars:
 - name: DEFAULT_USER_ROLE
